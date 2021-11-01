@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Formulir Pendaftaran </title>
+</head>
+<body>
+	<h2> Formulir Penerimaan Peserta Didik Baru SMA Bapakku </h2>
+	<form action="proses.php" method="POST" name="fpendaftaran">
+		<table>
+			<tr>
+				<td> Nomor </td>
+				<td colspan="3" align="center"><b> &emsp; &emsp; &emsp; &emsp; INFO PENDAFTARAN </b></td>
+			</tr>
+			<tr>
+				<td align="center"> 1 </td>
+				<td><label for="fnisn"> NISN </label></td>
+				<td><input type="number" id="fnisn" name="fnisn"></td>
+			</tr>
+			<tr>
+				<td align="center"> 2 </td>
+				<td><label for="fasalSekolah"> Asal Sekolah </label></td>
+				<td><input type="text" id="fasalSekolah" name="fasalSekolah"></td>
+			</tr>
+			<tr>
+				<td align="center"> 3 </td>
+				<td><label for="ftahunLulus"> Tahun Lulus </label></td>
+				<td><input type="date" id="ftahunLulus" name="ftahunLulus"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><b> DATA CALON PESERTA </b></td>
+			</tr>
+			<tr>
+				<td align="center"> 4 </td>
+				<td><label for="fnama"> Nama Lengkap </label></td>
+				<td><input type="text" id="fnama" name="fnama"></td>
+			</tr>
+			<tr>
+				<td align="center"> 5 </td>
+				<td><label for="fnik"> NIK </label></td>
+				<td><input type="number" id="fnik" name="fnik"></td>
+			</tr>
+			<tr>
+				<td align="center"> 6 </td>
+				<td><label for="ftempatTanggalLahir"> Tempat/Tanggal Lahir </label></td>
+				<td colspan="3">
+					<input type="text" id="ftempat" name="ftempat" size="6"> 
+					<input type="date" id="ftanggalLahir" name="ftanggalLahir">
+				</td>
+			</tr>
+			<tr>
+				<td align="center"> 7 </td>
+				<td><label for="fjenisKelamin"> Jenis Kelamin </label></td>
+				<td>
+					<input type="radio" id="flaki" name="fjenisKelamin" value="laki-laki">
+					<label for="laki"> Laki-laki </label>
+					<input type="radio" id="fperempuan" name="fjenisKelamin" value="perempuan">
+					<label for="perempuan"> Perempuan </label>
+				</td>
+			</tr>
+			<tr>
+				<td align="center"> 8 </td>
+				<td><label for="femail"> Email Aktif </label></td>
+				<td><input type="email" id="femail" name="femail" placeholder="email@example.com"></td>
+			</tr>
+			<tr>
+				<td align="center"> 9 </td>
+				<td><label for="falamat"> Alamat Lengkap </label></td>
+				<td>
+					<textarea rows="4" cols="28" name="falamat"> </textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><b> DATA ORANG TUA </b></td>
+			</tr>
+			<tr>
+				<td align="center"> 10 </td>
+				<td><label for="fkartuKeluarga"> Nomor Kartu Keluarga </label></td>
+				<td><input type="text" id="fkartuKeluarga" name="fkartuKeluarga"></td>
+			</tr>
+			<tr>
+				<td align="center"> 11 </td>
+				<td><label for="fayah"> Nama Ayah Kandung </label></td>
+				<td><input type="text" id="fayah" name="fayah"></td>
+			</tr>
+			<tr>
+				<td align="center"> 12 </td>
+				<td><label for="fagamaAyah"> Agama </label></td>
+				<td>
+				  	<select id="fagamaAyah">
+						<option value="Kosong"> &emsp;&emsp;&emsp;  &emsp;&emsp;&nbsp;</option>
+				    	<option value="Islam"> &emsp;&emsp;&emsp; Islam &emsp;&emsp;&nbsp; </option>
+				    	<option value="Kristen"> &emsp;&emsp;&emsp; Kristen &emsp;&emsp;&nbsp;</option>
+				    	<option value="Katolik"> &emsp;&emsp;&emsp; Katolik &emsp;&emsp;&nbsp;</option>
+				    	<option value="Hindu"> &emsp;&emsp;&emsp; Hindu &emsp;&emsp;&nbsp;</option>
+				    	<option value="Buddha"> &emsp;&emsp;&emsp; Buddha &emsp;&emsp;&nbsp;</option>
+				    	<option value="Konghucu"> &emsp;&emsp;&emsp; Konghucu &emsp;&emsp;&nbsp;</option>
+				  	</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="center"> 13 </td>
+				<td><label for="fpekerjaanAyah"> Pekerjaan </label></td>
+				<td><input type="text" id="fpekerjaanAyah" name="fpekerjaanAyah"></td>
+			</tr>
+			<tr>
+				<td align="center"> 14 </td>
+				<td><label for="fibu"> Nama Ibu Kandung </label></td>
+				<td><input type="text" id="fibu" name="fibu"></td>
+			</tr>
+			<tr>
+				<td align="center"> 15 </td>
+				<td><label for="fagamaIbu"> Agama </label></td>
+				<td>
+				  	<select id="fagamaIbu">
+						<option value="Kosong"> &emsp;&emsp;&emsp;  &emsp;&emsp; &emsp;</option>
+				    	<option value="Islam"> &emsp;&emsp;&emsp; Islam &emsp;&emsp;&nbsp; </option>
+				    	<option value="Kristen"> &emsp;&emsp;&emsp; Kristen &emsp;&emsp;&nbsp;</option>
+				    	<option value="Katolik"> &emsp;&emsp;&emsp; Katolik &emsp;&emsp;&nbsp;</option>
+				    	<option value="Hindu"> &emsp;&emsp;&emsp; Hindu &emsp;&emsp;&nbsp;</option>
+				    	<option value="Buddha"> &emsp;&emsp;&emsp; Buddha &emsp;&emsp;&nbsp;</option>
+				    	<option value="Konghucu"> &emsp;&emsp;&emsp; Konghucu &emsp;&emsp;&nbsp;</option>
+				  	</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="center"> 16 </td>
+				<td><label for="fpekerjaanIbu"> Pekerjaan </label></td>
+				<td><input type="text" id="fpekerjaanIbu" name="fpekerjaanIbu"></td>
+			</tr>
+			<tr>
+				<td align="center"> 17 </td>
+				<td><label for="falamatOrangTua"> Alamat Orang Tua </label></td>
+				<td>
+					<textarea rows="4" cols="28" name="falamatOrangTua"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td><input type="submit" name="fsubmit" value="Submit"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
